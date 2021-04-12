@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var url = 'http://127.0.0.1:5001/GUI-is-still-open'; 
+    fetch(url, { mode: 'no-cors'});
+    setInterval(function(){ fetch(url, { mode: 'no-cors'});}, 5000)();
+
+});
+
+</script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MediSmart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}" />
+  </head>
+
+  <body>
+
+<div class="main">
+    
+  <div class="title">
+    <h3>Mammograms-Scan</h3>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="panel">
+    <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+    <label for="file-upload" id="file-drag" class="upload-box">
+      <div id="upload-caption">Drop image here or click to select</div>
+      <img id="image-preview" class="hidden" />
+    </label>
+  </div>
+<div style="margin-bottom: 2rem;">
+    <input type="button" value="Analyze" class="button" onclick="submitImage();" />
+    <input type="button" value="Clear" class="button" onclick="clearImage();" />
+<div>
+</div>
+  </div>
+  <div id="image-box">
+    <img id="image-display" />
+    <div id="pred-result" class="hidden"></div>
+    <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+
+
+  <div>
+    <div>
+      <div>
+        <div>
+
+  <a href="/visualisation" class="button">See Analysis</a>
+<a href="/patches" class="button">See Zoom Patches</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </body>
+
+  <footer>
+     <center>
+
+    </center>
+    </div>
+    <script src="{{ url_for('static',filename='main2.js') }}"></script>
+  </footer>
+</html>

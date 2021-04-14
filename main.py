@@ -17,7 +17,6 @@ from flask import Flask, send_file
 from PIL import Image ,  ImageOps
 from resizeimage import resizeimage
 from flask import Flask
-from flaskwebgui import FlaskUI
 
 
 app = Flask(__name__)

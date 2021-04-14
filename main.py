@@ -352,4 +352,4 @@ def patches2():
     return send_file(save_path, mimetype='image/png')
 
 if __name__ == "__main__":
-    app.run(port=5001 , debug =True)
+    app.run(debug =True)

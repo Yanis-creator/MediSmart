@@ -7,4 +7,4 @@
 
  3.Type and Run python main.py
 
- 4.Open Browser and go to this port 127.0.0.1:5001
+ 4.Open Browser and go to this port 127.0.0.1:5000

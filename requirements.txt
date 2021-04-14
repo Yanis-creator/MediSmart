@@ -4,7 +4,7 @@ gunicorn==20.0.4
 imageio==2.9.0
 matplotlib==3.2.1
 numpy==1.18.3
-opencv-python
+opencv-python-headless==4.2.0.32
 pandas==1.0.3
 Pillow==7.2.0
 python-resize-image==1.1.19

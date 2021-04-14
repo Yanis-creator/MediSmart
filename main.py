@@ -286,7 +286,7 @@ def main():
     return render_template('base.html')
 
 
-@app.route('/predict3', methods=['GET', 'POST'])
+@app.route('/predict3', methods=['POST'])
 def predict3():
     if request.method == 'POST':
         # Get the image from post request

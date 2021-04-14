@@ -275,13 +275,13 @@ def output_patches(img_path):
     dst.save('./outputs/patches.png')
     return None   
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
     # Main page
     return render_template('home.html')
 
 
-@app.route('/home', methods=['GET'])
+@app.route('/home')
 def main():
     return render_template('base.html')
 

@@ -9,4 +9,5 @@ pandas==1.0.3
 Pillow==7.2.0
 python-resize-image==1.1.19
 torch==1.8.1+cpu 
+tqdm
 Werkzeug==1.0.1

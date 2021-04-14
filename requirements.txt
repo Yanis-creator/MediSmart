@@ -51,7 +51,7 @@ matplotlib==3.2.1
 nltk==3.5
 numpy==1.18.3
 oauthlib==3.1.0
-opencv-python==4.2.0.34
+opencv-python
 opt-einsum==3.2.1
 pandas==1.0.3
 parso==0.7.1
